@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101114;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.login-card {
+    width: 390px;
+    max-width: 92%;
+    padding: 32px 26px;
+    background: #17181d;
+    border: 1px solid #343640;
+    border-radius: 18px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 12px 0;
+    letter-spacing: -2px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    background: #101114;
+    color: white;
+    border: 1px solid #41434d;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 9px;
+    background: #1685ee;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #086fd0;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+#message {
+    color: #62b4ff;
+    font-size: 14px;
+    line-height: 1.6;
+/* الأيقونة الأساسية وتوسيط محتواها الداخلي */
+.instagram-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 25px;
+  
+  /* كود التوسيط داخل مكانها الحالي */
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* إطار الكاميرا الأبيض */
+.instagram-icon::before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border: 5px solid #ffffff;
+  border-radius: 17px;
+}
+
+/* الدائرة المركزية + النقطة البيضاء الصغيرة */
+.instagram-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 -7px #ffffff; /* النقطة الصغيرة المصغرة */
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* تأخذ عرض الشاشة بالكامل لتتوسط الأيقونة فيها */
+}
+
+
